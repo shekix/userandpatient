@@ -1,0 +1,55 @@
+First Page:
+	   -Login form
+		-username and password
+		-forgot password link
+			-a form to update password by entering email and new password and redirecting back to login
+		-not registered? sign up
+			-a form to register user, after registration redirect back to login
+		-add guard
+			-to access homepage only if login successfull
+		-login successful(if username and password match and exists in database)
+			-HOME PAGE
+
+
+Registration Page:
+		
+		-Registration
+			-first name, Last name, email, password, confirm password (all fields required)
+		-password
+			password and confirm password must be matched
+		-api
+			-create api that stores registration data in database
+			-while storing check if email already exists. if yes then do not allow registration else make new registration
+		
+		-already registered
+			-redirect to login page
+		
+		-successful registration
+			-redirect to login page
+
+Home Page:
+		-patient form
+			-form with 10-15 fields with validation
+		-api
+			-create api that stores ,retrieves and delete patient data in database in relation to the front-end form
+		
+		-add patient
+			-on submitting the form , call post end point and send the data of filled form,data must be added in database
+
+		-grid view
+			-must display all the patients in database with option to update,view and delete
+		
+		-update
+			-populate the form with patient details
+			-make changes
+			-update button
+				-call put end point and send the data of filled form,saving changes in database as well as front-end
+			-view
+				-show all details of a particular patient
+			delete
+				-call delete api and send the id
+				-soft delete the patient in database and must not be visible in front end
+				
+
+		
+			
